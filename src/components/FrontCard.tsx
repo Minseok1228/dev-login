@@ -1,23 +1,10 @@
-import * as React from "react"
+import * as React from 'react';
 
-import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 export function CardWithForm() {
   return (
@@ -33,14 +20,17 @@ export function CardWithForm() {
               <Label htmlFor="name">이름</Label>
               <Input id="name" placeholder="홍길동" />
             </div>
+
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="name">이메일</Label>
               <Input id="name" placeholder="hello@world.com" />
             </div>
+
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="name">연락처</Label>
               <Input id="name" placeholder="01011112222" />
             </div>
+
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="role">역할</Label>
               <Select>
@@ -56,9 +46,6 @@ export function CardWithForm() {
           </div>
         </form>
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button>다음 단계로</Button>
-      </CardFooter>
     </Card>
-  )
+  );
 }

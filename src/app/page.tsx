@@ -1,16 +1,18 @@
-import { CardWithForm } from "@/components/FrontCard";
-import { CarouselDemo } from "@/components/Carousel";
-import { ModeToggle } from "@/components/ModeToggle";
-import Image from "next/image";
-import { PasswordForm } from "@/components/BackCard";
+import { CardWithForm } from '@/components/FrontCard';
+import { CarouselDemo } from '@/components/Carousel';
+import { DarkModeToggle } from '@/components/ModeToggle';
+import Image from 'next/image';
+import { PasswordForm } from '@/components/BackCard';
+import { InputForm } from '@/components/AuthForm';
 
 export default function Home() {
   return (
-   <>
-   <ModeToggle/>
-   {/* <CardWithForm/>
+    <>
+      <DarkModeToggle />
+      {/* <CardWithForm/> 
    <PasswordForm/> */}
-   <CarouselDemo/>
-   </>
+      <InputForm />
+      <CarouselDemo />
+    </>
   );
 }
